@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Project Planner</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <h1>Projects</h1>
+    <div id="project-table-container">
+        Loading...
+    </div>
+    <form id="project-form">
+        <fieldset>
+            <legend>Add/Edit Project</legend>
+            <div>
+                <label for="project name">Project name</label>
+                <input type="text" name="project-name" id="project-name">
+            </div>
+            <div>
+                <label for="project-duedate">Project due date</label>
+                <input type="date" id="project-duedate">
+            </div>
+            <div>
+                <label for="project-status">Project status</label>
+                <select type="text" name="project-status" id="project-status" list="status-types">
+                    <option>Not yet begun</option>
+                    <option>Work ongoing</option>
+                    <option>Finished</option>
+                </select>
+            </div>
+            <div>
+                <label for="project-notes">Notes</label>
+                <input type="text" name="project-notes" id="project-notes">
+            </div>
+            <button class="btn-blue" id="submit-project">Submit</button>
+        </fieldset>
+    </form>
+    <div id="toast"></div>
+    <script src="reef.min.js"></script>
+    <script src="index.js"></script>
+    </body>
+</html>
